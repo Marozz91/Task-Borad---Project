@@ -5,4 +5,4 @@
 - CSS
 - Javascript
 ---
-Link: [link to project]()
+Link: [link to project](https://marozz91.github.io/Task-Borad---Project/)
