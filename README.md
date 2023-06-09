@@ -1,4 +1,4 @@
-# Task Board
+# Task Board Project
 ## Website for task board project
 ---
 - HTML
