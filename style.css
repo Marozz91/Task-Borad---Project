@@ -123,9 +123,14 @@ form {
     position: relative;
     top: 150px;
     left: 50px;
+}
+
+.animation {
+
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
 }
 
 
@@ -206,27 +211,3 @@ hr {
     border-top: 4px dashed var(--main-color);
     border-bottom: unset;
 }
-
-
-/* 
-@media only screen and (max-width:800px) {
-
-
-    .main {
-        width: 80%;
-        padding: 0;
-    }
-
-    .right {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:500px) {
-
-    .menu,
-    .main,
-    .right {
-        width: 100%;
-    }
-} */

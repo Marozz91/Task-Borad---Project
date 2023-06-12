@@ -26,6 +26,8 @@ function addTask() {
 
     displayTasks(tasksList);
 
+    fadeIn();
+
     clearForm();
 }
 
@@ -124,12 +126,10 @@ function displayTasks(tasksList) {
 
         <div class="displayNote" onmouseenter="showIbox(${index})" onmouseleave="hideIbox(${index})" >
 
-        <div id="para${index}">
-        <p> ${tasks.task}</p> 
-        <p class="dateValue"> ${tasks.date}</p>
-        <p class="timeValue"> ${tasks.time}</p>
-        <p><i id="iBox${index}" onclick="deleteTask(${index})" class="fa-solid fa-xmark" ></i></p>
-        </div>
+                <p> ${tasks.task}</p> 
+                <p class="dateValue"> ${tasks.date}</p>
+                <p class="timeValue"> ${tasks.time}</p>
+                <p><i id="iBox${index}" onclick="deleteTask(${index})" class="fa-solid fa-xmark" ></i></p>
 
         </div>
         `;
@@ -180,5 +180,15 @@ function hideIbox(index) {
     iBox.style.visibility = "hidden";
 }
 
+
+
+
+function fadeIn() {
+
+    const note = document.lastElementChild.getElementsByClassName("displayNote");
+    console.log(note);
+    note[note.length - 1].classList.add("animation");
+
+}
 
 
